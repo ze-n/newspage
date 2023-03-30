@@ -36,6 +36,11 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <div className="hamburger">
+          <div className="hamburger__lines" id="hamburger__line1"></div>
+          <div className="hamburger__lines" id="hamburger__line2"></div>
+          <div className="hamburger__lines" id="hamburger__line3"></div>
+        </div>
       </div>
     </header>
   );

@@ -20,3 +20,16 @@
   text-decoration: none;
   color: var(--clr-blue-600);
 }
+.hamburger {
+  cursor: pointer;
+}
+.hamburger__lines {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: var(--clr-blue-800);
+  margin-bottom: 0.3rem;
+  border-radius: 30rem;
+}
+.hamburger__line3 {
+  margin-bottom: 0;
+}
