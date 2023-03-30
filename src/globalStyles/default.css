@@ -1,0 +1,7 @@
+html {
+  font-size: var(--fs-root);
+}
+
+body {
+  font-family: var(--ff-inter);
+}

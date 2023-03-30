@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+body {
+  --clr-orange-400: hsl(35, 77%, 62%);
+  --clr-red-400: hsl(5, 85%, 63%);
+
+  --clr-white: hsl(36, 100%, 99%);
+  --clr-blue-200: hsl(233, 8%, 79%);
+  --clr-blue-600: hsl(236, 13%, 42%);
+  --clr-blue-800: hsl(240, 100%, 5%);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --ff-inter: "Inter", sans-serif;
+
+  --fs-root: 15px;
+}
