@@ -44,18 +44,18 @@ export default function Header() {
 
         <img
           className={
-            menu ? "hamburger-menu hamburger-open-hide" : "hamburger-menu"
+            menu ? "hamburger-icon hamburger-open-icon-hide" : "hamburger-icon"
           }
-          id="hamburger-open"
+          id="hamburger-open-icon"
           src={hamburgerOpen}
           onClick={() => setMenu(!menu)}
           alt=""
         />
         <img
           className={
-            menu ? "hamburger-menu" : "hamburger-menu hamburger-close-hide"
+            menu ? "hamburger-icon" : "hamburger-icon hamburger-close-icon-hide"
           }
-          id="hamburger-close"
+          id="hamburger-close-icon"
           src={hamburgerClose}
           onClick={() => setMenu(!menu)}
           alt=""
