@@ -1,13 +1,18 @@
 import React from "react";
+import { useState } from "react";
 import "./Header.css";
 import { ReactComponent as Logo } from "../assets/icons/logo.svg";
+import hamburgerOpen from "../assets/icons/icon-menu.svg";
+import hamburgerClose from "../assets/icons/icon-menu-close.svg";
 
 export default function Header() {
+  const [menu, setMenu] = useState(false);
+
   return (
     <header className="header">
       <div className="container header__container">
         <Logo className="header__logo" />
-        <nav className="header__nav">
+        <nav className={menu ? "header__nav show-menu" : "header__nav"}>
           <ul className="header__nav-list" role="list">
             <li className="header__nav-items">
               <a href="#" className="header__nav-links">
@@ -36,11 +41,25 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <div className="hamburger">
-          <div className="hamburger__lines" id="hamburger__line1"></div>
-          <div className="hamburger__lines" id="hamburger__line2"></div>
-          <div className="hamburger__lines" id="hamburger__line3"></div>
-        </div>
+
+        <img
+          className={
+            menu ? "hamburger-menu hamburger-open-hide" : "hamburger-menu"
+          }
+          id="hamburger-open"
+          src={hamburgerOpen}
+          onClick={() => setMenu(!menu)}
+          alt=""
+        />
+        <img
+          className={
+            menu ? "hamburger-menu" : "hamburger-menu hamburger-close-hide"
+          }
+          id="hamburger-close"
+          src={hamburgerClose}
+          onClick={() => setMenu(!menu)}
+          alt=""
+        />
       </div>
     </header>
   );
