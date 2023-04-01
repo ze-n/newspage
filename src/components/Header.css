@@ -1,17 +1,22 @@
+/* /////////////////////typography */
+.header__nav-links {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+/*////////////////////// layout */
 .header {
   --mh: 7rem;
   min-height: var(--mh);
   width: 100vw;
 }
 .header__container {
+  min-height: var(--mh);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: var(--mh);
-  position: relative;
 }
+
 .header__nav {
-  background-color: var(--clr-white);
   position: fixed;
   right: 0;
   top: 0;
@@ -19,65 +24,91 @@
   height: 100vh;
   padding-block: 10rem;
   padding-inline: 1.5rem;
-  clip-path: circle(0% at 100% 0);
-  transition: clip-path 0.6s ease;
-}
-/* for menu show hide functionality */
-.show-menu {
-  clip-path: circle(141.4% at 100% 0);
 }
 .header__nav-items {
   margin-bottom: 1.5rem;
 }
-
-.header__nav-links {
-  color: var(--clr-blue-600);
-  text-decoration: none;
-  font-size: 1.2rem;
+.header__container {
+  position: relative;
 }
-.hamburger-menu {
+.hamburger-icon {
   position: absolute;
-  right: 1rem;
-  top: 2rem;
   z-index: 9;
   width: 3.2rem;
-  clip-path: circle(70.7% at 50% 50%);
-  transition: clip-path 0.5s ease;
 }
-#hamburger-open {
+#hamburger-close-icon {
+  /* placing hamburger closing cross icon */
+  top: 2rem;
+  right: 1rem;
+}
+#hamburger-open-icon {
+  /* placing hamburger open icon */
   top: 3rem;
+  right: 1rem;
 }
-.hamburger-open-hide {
-  clip-path: circle(0% at 50% 50%);
+/* ////////////////////////colors */
+.header__nav {
+  background-color: var(--clr-white);
 }
-.hamburger-close-hide {
+.header__nav-links {
+  color: var(--clr-blue-600);
+}
+/*////////////////////// transitions */
+.header__nav {
+  clip-path: circle(0% at 100% 0);
+  transition: clip-path 0.6s ease;
+}
+.show-menu {
+  /* for menu show hide functionality */
+  clip-path: circle(141.4% at 100% 0);
+}
+
+.hamburger-icon {
+  clip-path: circle(70.7% at 50% 50%);
+  opacity: 1;
+  transition: clip-path 0.5s ease, opacity 0.2s ease;
+}
+
+.hamburger-open-icon-hide {
+  /* hide hamburger opening icon */
   clip-path: circle(0% at 50% 50%);
+  opacity: 0;
+}
+.hamburger-close-icon-hide {
+  /* hide hamburger close cross icon */
+  clip-path: circle(0% at 50% 50%);
+  opacity: 0;
 }
 
 @media screen and (min-width: 700px) {
-  .hamburger-menu {
+  /* //////////////////typography */
+  .header__nav-links {
+    font-size: 1.1rem;
+  }
+  /* /////////////////////layout */
+  .hamburger-icon {
     display: none;
   }
   .header__nav {
     clip-path: circle(141.4% at 100% 0);
     position: relative;
     padding: 0;
-    height: var(--mh);
+    height: auto;
     min-width: 0;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-  }
-  .header__nav-items {
-    margin-bottom: 0;
   }
   .header__nav-list {
     display: flex;
   }
+
+  .header__nav-items {
+    margin-bottom: 0;
+  }
   .header__nav-items {
     margin-left: 2.5rem;
   }
-  .header__nav-links {
-    font-size: 1.1rem;
+  /* ///////////////////////colors */
+  .header__nav {
+    background-color: transparent;
   }
+  /* //////////////////transitions */
 }
