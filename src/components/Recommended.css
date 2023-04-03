@@ -1,0 +1,32 @@
+.recommended {
+  margin-block: 2rem;
+}
+.recommended__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.recommended__item {
+  display: flex;
+  flex: 1;
+  min-width: 390px;
+}
+
+.recommended__item-img {
+  overflow: hidden;
+  width: 7rem;
+  object-fit: cover;
+}
+.recommended__item-detail {
+  margin-left: 1rem;
+}
+.recommended__item-id {
+  font-size: 2rem;
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-blue-200);
+}
+.recommended__item-title {
+  font-size: 1.2rem;
+  margin-block: 0.5rem;
+}

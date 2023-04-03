@@ -1,0 +1,30 @@
+.new-articles {
+  padding: 1rem;
+}
+.new-articles__container {
+  color: var(--clr-white);
+  background-color: var(--clr-blue-800);
+  padding: 1.5rem;
+}
+.new-articles :where(h2) {
+  color: var(--clr-orange-400);
+}
+.new-articles__article {
+  color: var(--clr-blue-100);
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--clr-blue-600);
+}
+.new-articles__article:last-child {
+  border-bottom: none;
+}
+.new-articles__heading {
+  margin-bottom: 0.7rem;
+}
+.new-articles__detail {
+  color: var(--clr-blue-400);
+}
+@media screen and (min-width: 700px) {
+  .new-articles {
+    padding-inline: 2rem;
+  }
+}

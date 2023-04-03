@@ -4,4 +4,23 @@ html {
 
 body {
   font-family: var(--ff-inter);
+  background-color: var(--clr-white);
+  color: var(--clr-blue-800);
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  font-weight: var(--fw-extra-bold);
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+p {
+  color: var(--clr-blue-600);
 }

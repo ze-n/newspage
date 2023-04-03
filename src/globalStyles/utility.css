@@ -4,6 +4,26 @@
   padding: 1rem;
 }
 
+.two-columns__right {
+  margin-top: 1.5rem;
+}
+
+.cta {
+  /* colors */
+  background-color: var(--clr-red-400);
+  color: var(--clr-white);
+  /* typography */
+  font-size: 0.8rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3rem;
+  /* display stuff */
+  display: inline-block;
+  /* paddings */
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 @media screen and (min-width: 700px) {
   .container {
     padding-inline: 2rem;
