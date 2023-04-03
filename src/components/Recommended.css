@@ -10,13 +10,14 @@
 .recommended__item {
   display: flex;
   flex: 1;
-  min-width: 390px;
+  min-width: 250px;
   cursor: pointer;
 }
 
 .recommended__item-img {
   overflow: hidden;
-  width: 7rem;
+  max-width: 6rem;
+  min-width: 6rem;
   object-fit: cover;
 }
 .recommended__item-detail {

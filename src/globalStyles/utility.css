@@ -32,4 +32,10 @@
   .container {
     padding-inline: 2rem;
   }
+  .two-columns {
+    display: flex;
+  }
+  .two-columns > * {
+    flex: 1;
+  }
 }
