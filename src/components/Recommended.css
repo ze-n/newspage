@@ -11,6 +11,7 @@
   display: flex;
   flex: 1;
   min-width: 390px;
+  cursor: pointer;
 }
 
 .recommended__item-img {
@@ -29,4 +30,13 @@
 .recommended__item-title {
   font-size: 1.2rem;
   margin-block: 0.5rem;
+}
+
+/* transitions */
+
+.recommended__item-title {
+  transition: color 0.3s ease;
+}
+.recommended__item:hover .recommended__item-title {
+  color: var(--clr-red-400);
 }

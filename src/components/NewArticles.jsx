@@ -3,18 +3,16 @@ import "./NewArticles.css";
 export default function NewArticles() {
   const data = [
     {
-      heading: "Hydrogen VS Electric Cars",
-      detail: "Will hydrogen-fueled cars ever catch up to EVs?",
+      title: "Hydrogen VS Electric Cars",
+      desc: "Will hydrogen-fueled cars ever catch up to EVs?",
     },
     {
-      heading: "The Downsides of AI Artistry",
-      detail:
-        "What are the possible adverse effects of on-demand AI image generation?",
+      title: "The Downsides of AI Artistry",
+      desc: "What are the possible adverse effects of on-demand AI image generation?",
     },
     {
-      heading: "Is VC Funding Drying Up?",
-      detail:
-        "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+      title: "Is VC Funding Drying Up?",
+      desc: "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
     },
   ];
   return (
@@ -24,8 +22,8 @@ export default function NewArticles() {
         {data.map((e) => {
           return (
             <article className="new-articles__article">
-              <h3 className="new-articles__heading">{e.heading}</h3>
-              <p className="new-articles__detail">{e.detail}</p>
+              <h3 className="new-articles__title">{e.title}</h3>
+              <p className="new-articles__desc">{e.desc}</p>
             </article>
           );
         })}

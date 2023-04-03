@@ -13,15 +13,24 @@
   color: var(--clr-blue-100);
   padding-block: 2rem;
   border-bottom: 1px solid var(--clr-blue-600);
+  cursor: pointer;
 }
 .new-articles__article:last-child {
   border-bottom: none;
 }
-.new-articles__heading {
+.new-articles__title {
   margin-bottom: 0.7rem;
 }
-.new-articles__detail {
+.new-articles__desc {
   color: var(--clr-blue-400);
+}
+
+/* transitions */
+.new-articles__title {
+  transition: color 0.3s ease;
+}
+.new-articles__article:where(:hover, :focus) .new-articles__title {
+  color: var(--clr-orange-400);
 }
 @media screen and (min-width: 700px) {
   .new-articles {
